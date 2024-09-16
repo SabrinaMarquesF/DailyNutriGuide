@@ -1,0 +1,183 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Banner */
+
+.carousel-caption {
+    position: absolute;
+    bottom: 30%; 
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.carousel-caption h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.carousel-caption p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.carousel-caption a.btn {
+    font-size: 18px;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.banner-content a {
+    margin-top: 20px;
+}
+
+/* Ícones */
+section img {
+    width: 50px;
+}
+
+/* Estilos dos cards */
+.princing-container {
+    padding-bottom: 5em;
+    text-align: center;
+}
+
+
+.destaque {
+    border: 2px solid #168600;
+    background-color: #dbf0df;
+}
+
+/* Efeito de hover nos cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Outros ajustes gerais */
+
+.image-section {
+    position: relative;
+    overflow: hidden;
+    height: 300px; 
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.typed-text {
+    font-size: 2rem; 
+    font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid #fff;
+    animation: typing 4s steps(30, end) 1s 1 normal both, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #fff;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+.footer h4 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.footer p {
+    color: #cccccc;
+    margin-bottom: 0.5rem;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-icons a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #5f00ad;
+}
+
+.footer .btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+}
+
+.footer .btn-success {
+    background-color: #168600;
+    border-color: #168600;
+}
+
+.footer .btn-success:hover {
+    text-decoration: none;
+    background-color: #00470c;
+    border-color: #00470c;
+}
